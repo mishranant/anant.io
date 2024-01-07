@@ -1,0 +1,45 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>नमस्कार🙏 <img src="https://avatars.githubusercontent.com/u/23376329?v=4">
+			</h1>
+			<p>
+				Welcome to the official home page of Anant Mishra!
+				You can take a look at my portfolio, read my blogs, or connect with me here.
+			</p>
+			<p>
+				I talk about Backend Engineering, AI, Cryptocurrency, Investing and Geopolitics.
+			</p>
+			<p>Here are a few ideas on how to get started with the template:</p>
+			<ul>
+				<li>Check out the blog posts in <a href="/blog">here</a></li>
+				<li>For hiring and collaborations, contact me on WhatsApp +91 97366 05649</li>
+				<li>Say hi at <a href="mailto:hi@anant.io">here</a></li>
+			</ul>
+			<p>
+				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
+					>read the docs
+				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+			</p>
+			<p>
+				Looking for a blog template with a bit more personality? Check out <a
+					href="https://github.com/Charca/astro-blog-template"
+					>astro-blog-template
+				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
