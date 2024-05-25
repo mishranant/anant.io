@@ -1,10 +1,10 @@
 ---
-title: 'Why don't government's just print inifinte money'
+title: 'Why dont governments just print inifinte money'
 pubDate: 2024-01-07
 description: 'Beginner friendly cryptocurrency explainer'
 author: 'Anant Mishra'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 
     alt: 'Some logo'
 tags: ["crypto", "blogging", "cryptocurrency", "investing", "passive income", "learning in public"]
 ---

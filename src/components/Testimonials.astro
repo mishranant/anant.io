@@ -1,0 +1,35 @@
+---
+const testimonials = [
+  { name: "John Doe", feedback: "This coaching changed my life!" },
+  { name: "Jane Smith", feedback: "I achieved my goals faster than I thought possible." },
+];
+---
+
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    {testimonials.map(testimonial => (
+      <blockquote>
+        <p>{testimonial.feedback}</p>
+        <footer>- {testimonial.name}</footer>
+      </blockquote>
+    ))}
+  </div>
+</section>
+
+<style>
+.testimonials {
+  background: #f0f0f0;
+  padding: 2rem;
+}
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid #0070f3;
+  background: #fff;
+}
+footer {
+  text-align: right;
+  font-style: italic;
+}
+</style>

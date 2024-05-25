@@ -1,0 +1,34 @@
+---
+const services = [
+  { title: "Personalized Coaching", description: "Tailored sessions to meet your individual needs." },
+  { title: "Career Guidance", description: "Expert advice to help you advance in your career." },
+  { title: "Skill Development", description: "Improve specific skills to achieve your goals." },
+];
+---
+
+<section class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <ul>
+      {services.map(service => (
+        <li>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+.services {
+  padding: 2rem;
+}
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+.services li {
+  margin-bottom: 1.5rem;
+}
+</style>

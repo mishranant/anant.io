@@ -1,7 +1,7 @@
 ---
 title: 'Guide to understanding Bharat (India) from the eyes of a young Desi adult'
-description: 'Anant\'s journey and perspective about India'
-pubDate: 'Jan 07 2024'
+description: 'Anants journey and perspective about India'
+pubDate: '2024-01-07'
 heroImage: '/blog-placeholder-4.jpg'
 ---
 

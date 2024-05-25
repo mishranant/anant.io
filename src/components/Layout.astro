@@ -1,0 +1,18 @@
+---
+// Import global CSS
+import '../styles/global.css';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <Header title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+  <main>
+    <slot /> <!-- This slot will be replaced by the content of the specific pages -->
+  </main>
+  <Footer />
+</body>
+</html>
