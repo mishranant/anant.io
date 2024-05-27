@@ -6,9 +6,8 @@ import { whatsappLink } from '../consts';
   <div class="container">
     <div class="top">
       <h2>Contact Us</h2>
-      <a
-        href={whatsappLink}
-        title="Chat with us on WhatsApp">Chat with us on WhatsApp</a>
+      <p>First Consultation is <strong>Free!</strong></p>
+      <a href={whatsappLink} title="Chat with us on WhatsApp" style="color: #05E775">Chat with us on WhatsApp</a>
     </div>
     <form action="https://formspree.io/f/{your-form-id}" method="POST">
       <label for="name">Name</label>
@@ -29,13 +28,30 @@ import { whatsappLink } from '../consts';
   }
   .contact-form {
     padding: 2rem;
-    background-image: url('contact.jpg');
-    background-size: 100% auto;
+    position: relative;
+    z-index: 1;
     color: white;
+}
+
+.contact-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('contact.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%) blur(3px);
+    -webkit-filter: brightness(50%) blur(3px);
+    z-index: -1;
   }
   .container {
     margin: auto;
-    width: 700px;
+    width: 70%;
   }
   .contact-form form {
     display: flex;
@@ -46,8 +62,21 @@ import { whatsappLink } from '../consts';
   }
   .contact-form input,
   .contact-form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 7px rgba(0, 123, 255, 0.5);
   }
   .contact-form button {
     margin-top: 1rem;
