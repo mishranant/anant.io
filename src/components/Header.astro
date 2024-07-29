@@ -1,5 +1,5 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+// import HeaderLink from './HeaderLink.astro';
 
 const CONTACT_MSG = "Hello, I want your 1-on-1 guidance regarding CAT, let me know when you are available :)";
 const whatsappLink = `https://wa.me/9736605649?text=${encodeURIComponent(CONTACT_MSG)}`;
@@ -8,11 +8,11 @@ const whatsappLink = `https://wa.me/9736605649?text=${encodeURIComponent(CONTACT
 <header>
 	<nav>
 		<h2><a href="/">1-on-1 Guidance</a></h2>
-		<div class="internal-links">
+		<!-- <div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
-		</div>
+		</div> -->
 		<div class="social-links">
 			<a href={whatsappLink} title="Chat with us on WhatsApp" style="background-color: #05E775; width: 32px; height: 32px;">
 				<svg width="32" height="32" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">

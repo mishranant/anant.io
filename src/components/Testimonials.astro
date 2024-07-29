@@ -1,35 +1,41 @@
----
-const testimonials = [
-  { name: "John Doe", feedback: "This guidance changed my life!" },
-  { name: "Jane Smith", feedback: "I achieved my goals faster than I thought possible." },
-];
----
-
 <section class="testimonials">
-  <div class="container">
-    <h2>What Our Clients Say</h2>
-    {testimonials.map(testimonial => (
-      <blockquote>
-        <p>{testimonial.feedback}</p>
-        <footer>- {testimonial.name}</footer>
-      </blockquote>
-    ))}
+  <h2 style="text-align: center; margin-bottom: 20px; color: black;">What Our Students Say</h2>
+  
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <div class="testimonial-card">
+      <i>"The guidance and support I received from the CAT-person guidance program were phenomenal. The mentor Anant is extremely knowledgeable and always ready to help."</i>
+      <p class="author">- Rajesh Kumar, CAT 2023 Aspirant</p>
+    </div>
+    
+    <div class="testimonial-card">
+      <i>"I was unsure about my preparation, but the structured approach and regular checkpoint catchups boosted my confidence. Highly recommend this program to all CAT aspirants."</i>
+      <p class="author">- Priya Sharma, CAT 2023 Aspirant</p>
+    </div>
+    
+    <div class="testimonial-card">
+      <i>"The personalized attention and doubt-clearing sessions were a game-changer for me. The mentor is truly invested in your success."</i>
+      <p class="author">- Anjali Verma, Upcoming CAT Aspirant</p>
+    </div>
   </div>
 </section>
 
 <style>
-.testimonials {
-  background: #f0f0f0;
-  padding: 2rem;
-}
-blockquote {
-  margin: 1rem 0;
-  padding: 1rem;
-  border-left: 4px solid #0070f3;
-  background: #fff;
-}
-footer {
-  text-align: right;
-  font-style: italic;
-}
+  .testimonial-card {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .author {
+    text-align: right;
+    font-weight: bold;
+    color: black;
+  }
+
+  .testimonials {
+    padding: 2em;
+    background: linear-gradient(to bottom, #d0e7ff, white); /* Light academic blue to white */
+  }
 </style>
